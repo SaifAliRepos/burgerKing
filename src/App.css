@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.marker
+{
+  background-color: rgba(136, 25, 25, 0.842);
+  border-radius: 5px;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.lettuce
+{
+  background-color: rgba(0, 128, 0, 0.87);
+  color: lightgreen;
+  padding-left: 130px;
+  padding-right: 130px;
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bacon
+{
+  background-color: rgba(165, 42, 42, 0.884);
+  color: burlywood;
+  padding-left: 130px;
+  padding-right: 130px;
+  border-radius: 5px;
 }
+
+.cheese
+{
+  background-color: rgb(253, 218, 21);
+  color: yellow;
+  padding-left: 130px;
+  padding-right: 130px;
+  border-radius: 7px;
+}
+
+
+.meat
+{
+  background-color: maroon;
+  padding-left: 130px;
+  padding-right: 130px;
+  border-radius: 5px;
+}
+
+.rotate_image {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(180deg);
+}
+
+
