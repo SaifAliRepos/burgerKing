@@ -18,7 +18,7 @@ export default class Burger extends Component {
       bacon: [],
       meat: [],
       cheese: [],
-      price: 10,
+      price: 0,
       show: false
     };
 
