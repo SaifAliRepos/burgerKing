@@ -1,10 +1,9 @@
-import React, { Component, useState } from 'react'
+import React, { Component} from 'react'
 import Lettuce from './Lettuce'
 import Bacon from './Bacon'
 import Cheese from './Cheese'
 import Meat from './Meat'
 import { FormGroup, Row, Container, Col } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
 import Pop from './Pop'
 
 
@@ -114,7 +113,6 @@ export default class Burger extends Component {
     const bacon = this.state.bacon.map(() => <Bacon />);
     const cheese = this.state.cheese.map(() => <Cheese />);
     const meat = this.state.meat.map(() => <Meat />);
-    const show = this.state.show;
 
 
     return (
