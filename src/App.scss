@@ -1,0 +1,114 @@
+:root {
+  --bun: #dd801c;
+  --bun-light: #edb834;
+  --bun-dark: #d3761f;
+}
+
+
+.marker {
+  background-color: rgba(136, 25, 25, 0.842);
+  border-radius: 5px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lettuce {
+  background-color: rgba(0, 128, 0, 0.87);
+  color: lightgreen;
+  padding-left: 160px;
+  padding-right: 160px;
+  border-radius: 7px;
+}
+
+.bacon {
+  background-color: rgba(165, 42, 42, 0.884);
+  color: burlywood;
+  padding-left: 160px;
+  padding-right: 160px;
+  border-radius: 5px;
+}
+
+.cheese {
+  background-color: rgb(253, 218, 21);
+  color: yellow;
+  padding-left: 160px;
+  padding-right: 160px;
+  border-radius: 7px;
+}
+
+
+.meat {
+  background-color: maroon;
+  padding-left: 160px;
+  padding-right: 160px;
+  border-radius: 5px;
+}
+
+.rotate_image {
+  transform: rotate(180deg);
+  overflow: visible;
+}
+
+.change-ratio-up {
+  margin-bottom: -6%;
+}
+
+body * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bun {
+  background-color: var(--bun-dark);
+  width: 100%;
+  height: 20%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -12%;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+}
+
+.bun-bottom {
+  @extend .bun;
+  border-radius: 20% 20% 50% 50%;
+
+  &::before {
+    background: var(--bun-light);
+    border-radius: 50%;
+    top: -45%;
+    z-index: 1;
+  }
+
+  &::after {
+    background: var(--bun);
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    width: 85%;
+  }
+}
+
+.bun-top {
+  @extend .bun;
+  height: 30%;
+  border-radius: 60% 60% 40% 40%;
+  margin-bottom: -10%;
+
+  &::before {
+    background: var(--bun);
+    border-radius: 60% 60%;
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 85%;
+    height: 80%;
+  }
+}
